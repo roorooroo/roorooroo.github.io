@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
@@ -15,19 +19,78 @@
 
     <div class="row">
 
-  <h1>Judy Park</h1>
+  <h1> Coding 101</h1>
 
 
 
-  <h3>Freelance lifestyle writer</h3>
+  <h3>MCLUVIN</h3>
 
       </div>
 
     <div class="image">
 
-   <img src="http://i.telegraph.co.uk/multimedia/archive/02524/maldives_2524920b.jpg" alt="">
+   <img src="http://viewerscommentary.files.wordpress.com/2013/03/superbad-mclovin.jpg?w=476&h=258" alt="">
 
   </div>
+
+  <table border="1" style="width:100%">
+  <tr>
+    <td>GBP</td>
+    <td>USD</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>GBP</td>
+    <td>EUR</td>
+    <td>94</td>
+  </tr>
+</table>
+
+
+  <head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Mushrooms', 1],
+          ['Onions', 1],
+          ['Olives', 1],
+          ['Mozzarella', 1],
+          ['Pepperoni', 5]
+        ]);
+
+        // Set chart options
+        var options = {'title':'How Much Pizza I Ate Last Night',
+                       'width':900,
+                       'height':900};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--Div that will hold the pie chart-->
+    <div id="chart_div"></div>
+  </body>
 
 
   <p class="slogan">Extensive experience in writing features articles for lifestyle magazines and publications such as Lifestyle Asia, Prestige Hong Kong and Hong Kong Tatler. Previous work has covered topics such as luxury travel, jewellery, fashion and fine dining.</p>
@@ -41,13 +104,49 @@
 
 <p>Second paragraph description for travel plans!
 
-   <ul>
 
-    <li><a href="">About Me</li>
-    <li><a href="">Contact</li>
-    <li><a href="">Photos</li>
+<nav class="navbar navbar-default">
 
-  </ul>
+<div class="navbar-header">
+
+ <!-- Hamburger Menu -->
+ <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fac-example-navbar-collapse-1">
+
+ <!-- The spans are styled to look like a Hamburger Menu -->
+     <span class="sr-only">Toggle navigation</span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+
+ </button>
+ <a class="navbar-brand" href="#">HO Powerful</a>
+
+</div><!-- /.navbar-header -->
+
+<div class="collapse navbar-collapse" id="fac-example-navbar-collapse-1">
+
+ <ul class="nav navbar-nav">
+     <li>
+         <a href="http://vignette2.wikia.nocookie.net/streetfighter/images/d/d2/RyuHadouken.png/revision/latest?cb=20100908203625">
+             RYU FIREBALL
+         </a>
+     </li>
+     <li>
+         <a href="http://www.freakingnews.com/pictures/26500/Ugly-Dog-26972.jpg">
+             UGLY Dog
+         </a>
+     </li>
+     <li>
+         <a href="http://vignette3.wikia.nocookie.net/koror-blog-org/images/d/d8/Vibe-vixen-sweet-brown-meme.jpg/revision/latest?cb=20140801191046">
+             Sweet Brown
+         </a>
+     </li>
+ </ul>
+
+</div><!-- /.navbar-collapse -->
+
+</nav>
+
 
 
 
