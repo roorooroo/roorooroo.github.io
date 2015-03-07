@@ -1,0 +1,36 @@
+h1 {
+  color: white;
+  background-color: black;
+  font-size: 3em;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+
+}
+
+p {
+  font-weight: 900;
+  text-align: center;
+  font-style: oblique;
+
+}
+
+
+.slogan {
+  color: green;
+  font-style: italic;
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: white;
+
+}
